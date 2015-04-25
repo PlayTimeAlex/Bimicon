@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic);
+
+@import "modules/base";
+@import "modules/reset";
+@import "modules/grid";
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+.align-right{
+    text-align: right;
+}
+.top_container{
+    background: url(../images/innerhead.jpg) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    &:after{
+        content:"";
+        display: block;
+        width: 100%;
+        height: 6px;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAGCAYAAAA/gpVXAAAAk0lEQVR42mL8//8/A4mAD4g9gdgbiF8A8SwgvkOSCSBLicBMQCwPxNVAfPc/KvgMxPOA2ByIWYkxj5ACDiC2BeJlQPwGiP/9xw1+APEuIPaE6iPZUmEgzgbiy//JAxeAOB2IhYixVAOIe4H45X/qgEdAXAPEMkDMiGwpyDWB0KD5/J/6ABQlL4B4LhAbAjELQIABAKX5BMj6QpfKAAAAAElFTkSuQmCC) repeat-x;
+        z-index: 10;
+    }
+}
+.top_container__main{
+    height: 872px;
+    background-image: url(../images/main-head.jpg);
+
+}
+.content{
+    padding: em(53) 0;
+}
+.page-title{
+    $font-size: 47;
+    font-size: em($font-size);
+    line-height: 1.3;
+    letter-spacing: -3.6px;
+    font-weight: 700;
+
+}
+.wpcf7-not-valid-tip{
+    font-size: 1.1em!important;
+}
+@import "modules/b-header";
+@import "modules/b-created";
+@import "modules/b-footer";
+@import "modules/b-mcat";
+@import "modules/b-promo";
+@import "modules/b-breadcrumb";
+@import "modules/b-text";
+@import "modules/b-cont";
+@import "modules/b-contact";
+@import "modules/b-request";
+@import "modules/b-gallery";
+@import "modules/b-popup";
+
+.pr{
+    &-dtitle{
+        $font-size: 47;
+        font-size: em($font-size);
+        font-weight: 700;
+        padding: em(14, $font-size) 0;
+        position: relative;
+        margin-bottom: em(24, $font-size);
+        letter-spacing: -2px;
+        &:after{
+            content:"";
+            display: block;
+            width: 77px;
+            height: 7px;
+            background-color: #ffbe01;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+.b-mcat{
+    &__item-prev{
+        display: block;
+        float: left;
+        margin-right: em(22);
+        border-radius: 7px;
+    }
+    &__item-cont{
+        overflow: hidden;
+        letter-spacing: -0.4px;
+        .title{
+            $font-size: 18;
+            font-size: em($font-size);
+            border-bottom: 1px solid #f4f4f4;
+            line-height: 1.16;
+            padding: 0 em(27, $font-size) em(13, $font-size) 0;
+            display: block;
+            color: $base__color;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        p{
+            $font-size: 14;
+            font-size: em($font-size);
+            color: rgba(0,0,0,.5);
+            padding: em(8, $font-size) 0;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@@include('blocks/_b-header-inner.html', {
+"title": "Anfrage an Bimicon Container Service GmbH"
+})
+<div class="content">
+    <div class="container">
+        <div class="b-request">
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Containertyp:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>See</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>Lager</label>
+                            </div>
+                            <div class="span6">
+                                <h4>Containertyp:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>RF (Kühlcontainer)</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>Sonstige Typen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Größe:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>10 ft (3m)</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>20 ft (6m)</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>40 ft (12m)</label>
+                            </div>
+                            <div class="span6">
+                                <h4>Zustand:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>Neu</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>Gebraucht</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Menge:</h4>
+                                <input class="b-request__text" type="text" placeholder="Tyoe in:"/>
+                            </div>
+                            <div class="span6">
+                                <h4>Lieferbedingungen:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>Ab Lager</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>frei Haus</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <h4>Lieferort:</h4>
+                        <div class="row">
+                            <div class="span4"><input class="b-request__text" type="text" placeholder="Anschrift:"/></div>
+                            <div class="span4"><input class="b-request__text" type="text" placeholder="PLZ:"/></div>
+                            <div class="span4"><input class="b-request__text" type="text" placeholder="Ort:"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Abladung:</h4>
+                                <label class="b-request__clabel"><input type="checkbox"/>durch uns</label>
+                                <label class="b-request__clabel"><input type="checkbox"/>durch den Seitenlader</label>
+                            </div>
+                            <div class="span6">
+                                <h4>Liefertermin:</h4>
+                                <input class="b-request__text" type="text" placeholder="Tyoe in:"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <h4>Sonstiges: (z.B. Lackierung, Umbau, etc):</h4>
+                        <input class="b-request__text" type="text"/>
+                    </div>
+                </div>
+            </div>
+            <h2>Kontaktinformationen</h2>
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <h4>Firma:</h4>
+                                <input class="b-request__text" type="text" placeholder="Tyoe in:"/>
+                            </div>
+                            <div class="span6">
+                                <h4>Ansprechspartner:</h4>
+                                <input class="b-request__text" type="text" placeholder="Tyoe in:"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span4">
+                                <h4>Telefon:</h4>
+                                <input class="b-request__text" type="text" placeholder="Anschrift:"/>
+                            </div>
+                            <div class="span4">
+                                <h4>Telefax:</h4>
+                                <input class="b-request__text" type="text" placeholder="PLZ:"/>
+                            </div>
+                            <div class="span4">
+                                <h4>E-Mail Adresse:</h4>
+                                <input class="b-request__text" type="text" placeholder="Ort:"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span6">
+                                <label class="b-request__clabel"><input type="checkbox"/>Mir eine Kopie der Email schicken</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6 align-right">
+                        <span class="b-request__note"><span class="error">*.</span> - Pflichtfeld</span>
+                    </div>
+                </div>
+            </div>
+            <div class="b-request__row">
+                <div class="row">
+                    <div class="span4">
+                        <button class="b-request__submit">Anfrage senden</button>
+                    </div>
+                    <div class="span8 align-right">
+                        <span class="b-request__result">Success</span>
+                    </div>
+                </div>
+    `
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

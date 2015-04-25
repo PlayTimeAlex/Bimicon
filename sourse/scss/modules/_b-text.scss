@@ -1,0 +1,59 @@
+.b-text{
+    h2{
+        $font-style: 27;
+        font-size: em($font-style);
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        padding: 0 0 em(20, $font-style) 0;
+    }
+    p{
+        $font-size: 14;
+        font-size: em($font-size);
+        color: #848484;
+        line-height: 1.43;
+        padding: 0 0 em(19, $font-size);
+    }
+    img{
+        max-width: 100%;
+    }
+    .tech-list{
+        li{
+            $font-size: 14;
+            font-size: em($font-size);
+            color: #848484;
+            padding: 0 0 em(15, $font-size) em(37, $font-size);
+            display: block;
+            position: relative;
+            &:after{
+                content:"";
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: #e8f0f7;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                transform: rotate(45deg)
+            }
+        }
+    }
+    .list{
+
+        li{
+            $font-size: 15;
+            font-size: em($font-size);
+            color: #848484;
+            padding: 0 0 0 em(35, $font-size);
+            position: relative;
+            list-style: none;
+            &:before{
+                content:"-";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+    }
+}

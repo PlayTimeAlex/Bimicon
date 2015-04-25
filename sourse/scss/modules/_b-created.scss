@@ -1,0 +1,11 @@
+.b-created{
+    $font-size: 13;
+    font-size: em($font-size);
+    text-align: right;
+    letter-spacing: -0.4px;
+    padding: em(6, $font-size) 0;
+    img{
+        margin-right: em(14, $font-size);
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,9 @@
+.b-footer{
+    background-color: #f3f3f3;
+    padding: em(15) 0;
+    &__copyrights{
+        $font-size: 13;
+        font-size: em($font-size);
+        line-height: 1.4;
+    }
+}

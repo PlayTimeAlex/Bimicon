@@ -1,0 +1,96 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.8);
+    z-index:500;
+}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{
+    -webkit-overflow-scrolling: touch;
+}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#colorbox{
+    outline:0;
+    box-shadow:0 0 33px rgba(0,0,0,0.75);
+}
+#cboxContent{
+    background:#fff;
+    border:5px solid #fff;
+}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+        #cboxPrevious, #cboxNext{
+            display: block;
+            width: 42px;
+            height: 38px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -21px;
+            background: #fff;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAMAAAA3HE0QAAAAM1BMVEX///89PT1JSUlVVVViYmJubm56enqGhoaSkpKenp6rq6u3t7fDw8PPz8/b29vn5+f09PRgLKfnAAAAAXRSTlMAQObYZgAAALRJREFUKM+FkssSAyEIBGnXXfep/P/X5pAqI2ASbjhUNcwo0ksfFVf3OT5lNq/D+ekKfqAmeHq3Q7aIluDq3QWpGl0z7CPN6ZKhGNpt9QL5C63rOqf1ldqol6jXOW2yUvljQB1p7zoMssGiIYJs531IxV6Vg0m6jClJS2GLx3JPWCXsOXI3OCRENXA1gcvSce9glufuIS7ZzId0h024FdLEUP1pqOOuU0PtYW5A6mrs0SaTegFtBAWaZfnb8gAAAABJRU5ErkJggg==) no-repeat center center #fff;
+            opacity:0.5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        #cboxNext{
+            left: auto;
+            right: 0;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAMAAAA3HE0QAAAAM1BMVEX///89PT1JSUlVVVViYmJubm56enqGhoaSkpKenp6rq6u3t7fDw8PPz8/b29vn5+f09PRgLKfnAAAAAXRSTlMAQObYZgAAALJJREFUKM99kkkSxCAMA2lCNgLE/3/tHGMZari5RNGyREqL85qf7n0EvZFfN8Jm8QK7Gy+4whMH3N9kBZpesAyOOyAHSFduhSNAAneHGiDKfbMuNnMblAC5lauLLbi2QQ95K7cvAy262Pk30LQIdAMHOSefryT+ELOw4qkNcvgXoo8Mj+onFPO0Z6rr05W2sDTraumcqhrZhyK0heV1AJdvKQZwiKU6VZAOsWQ16sm6s/QDz40FmhUxB4AAAAAASUVORK5CYII=);
+        }
+        #cboxClose{
+            display: block;
+            width: 1em;
+            height: 1em;
+            position:absolute;
+            top:1.5em;
+            right: 1.5em;
+            background: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiBbDQoJPCFFTlRJVFkgbnNfZmxvd3MgImh0dHA6Ly9ucy5hZG9iZS5jb20vRmxvd3MvMS4wLyI+DQpdPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjJCM0IzIiBkPSJNNDQuNDQ2IDU5Ljk5OGwtMjguODkgMjguODg5LTE0LjQ0NC0xNC40NDUgMjguODktMjguODg5LTMwLjAwMi0yOS45OTggMTUuNTU3LTE1LjU1NSAzMC4wMDIgMjkuOTk5IDI4Ljg4OS0yOC44ODkgMTQuNDQ0IDE0LjQ0NS0yOC44ODggMjguODg4IDI5Ljk5NiAyOS45OTktMTUuNTUyIDE1LjU1OC0zMC4wMDItMzAuMDAyeiIvPjwvc3ZnPg==) no-repeat;
+            background-size: 100% 100%;
+        }
+#cboxTitle{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: em(10) em(22);
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: em(14);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) repeat-x;
+}
+#cboxCurrent{
+    display: none!important;
+}
+#cboxLoadingGraphic{
+    background-color: rgba(255,255,255,.5);
+}
