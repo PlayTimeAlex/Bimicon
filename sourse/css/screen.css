@@ -730,6 +730,42 @@ a:hover {
 #cboxLoadingGraphic {
   background-color: rgba(255, 255, 255, 0.5); }
 
+.b-prodslide {
+  overflow: hidden;
+  padding-bottom: 4em;
+  position: relative;
+  margin-bottom: 2em; }
+  .b-prodslide .slides li {
+    display: none; }
+  .b-prodslide .flex-next, .b-prodslide .flex-prev {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 3em 3em 0 0;
+    overflow: hidden;
+    background-color: #ccc;
+    left: 0;
+    bottom: 0;
+    transition: background-color 0.3s; }
+    .b-prodslide .flex-next:after, .b-prodslide .flex-prev:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-right: 6px solid #2f3541;
+      border-bottom: 6px solid transparent;
+      border-top: 6px solid transparent;
+      margin: -6px 0 0 -3px; }
+    .b-prodslide .flex-next:hover, .b-prodslide .flex-prev:hover {
+      background-color: #999999; }
+  .b-prodslide .flex-next {
+    left: 3.5em; }
+    .b-prodslide .flex-next:after {
+      border-right: 0;
+      border-left: 6px solid #2f3541; }
+
 .pr-dtitle {
   font-size: 4.7em;
   font-weight: 700;
@@ -746,3 +782,136 @@ a:hover {
     position: absolute;
     left: 0;
     bottom: 0; }
+
+.b-promo__b1 h4 {
+  line-height: 1.1;
+  padding-bottom: 15px; }
+
+.b-promo__b2 h4 {
+  font-size: 2.1em; }
+
+.menu-item {
+  display: inline-block;
+  padding: 0.5em 0; }
+
+.menu-item a {
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 1.25em;
+  display: block;
+  position: relative;
+  padding-left: 1em; }
+
+.menu-item a:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #97c3e4;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-item a:hover {
+  color: #95bfe3; }
+
+.menu-item:last-child a {
+  margin-right: 0; }
+
+.b-header__lang-wrap {
+  color: #1a3f5a;
+  display: block;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-right: 1.53846em;
+  border-radius: 5px;
+  position: relative;
+  height: 3.5em;
+  background-repeat: no-repeat;
+  background-position: 23px center; }
+
+.b-header__lang-wrap:hover .ppqtrans_language_chooser {
+  display: block; }
+
+.ppqtrans_language_chooser {
+  background: #fff;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  display: none; }
+
+.ppqtrans_language_chooser li {
+  display: block;
+  background: none; }
+
+.ppqtrans_language_chooser li.active {
+  display: none; }
+
+.ppqtrans_language_chooser a {
+  font-size: 1.3em;
+  color: #1a3f5a;
+  display: block;
+  padding: 0.61538em 3.61538em;
+  text-decoration: none;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: 23px center; }
+
+.ppqtrans_language_chooser a:hover {
+  background-color: #f3eff0; }
+
+.b-header__lang-wrap > span {
+  font-size: 1.3em;
+  color: #1a3f5a;
+  display: block;
+  padding: 0.61538em 3.61538em;
+  text-align: left; }
+
+body:after {
+  content: url(../images/flags/hr.png) url(../images/flags/de.png) url(../images/flags/gb.png) url(../images/flags/pl.png) url(../images/flags/ro.png) url(../images/flags/bg.png) url(../images/flags/cz.png) url(../images/flags/sl.png) url(../images/flags/sk.png) url(../images/flags/hu.png);
+  display: block;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.lang-hr, .lang-hr > a {
+  background-image: url(../images/flags/hr.png); }
+
+.lang-de, .lang-de > a {
+  background-image: url(../images/flags/de.png); }
+
+.lang-en, .lang-en > a {
+  background-image: url(../images/flags/gb.png); }
+
+.lang-pl, .lang-pl > a {
+  background-image: url(../images/flags/pl.png); }
+
+.lang-ro, .lang-ro > a {
+  background-image: url(../images/flags/ro.png); }
+
+.lang-bg, .lang-bg > a {
+  background-image: url(../images/flags/bg.png); }
+
+.lang-cz, .lang-cz > a {
+  background-image: url(../images/flags/cz.png); }
+
+.lang-sl, .lang-sl > a {
+  background-image: url(../images/flags/sl.png); }
+
+.lang-sk, .lang-sk > a {
+  background-image: url(../images/flags/sk.png); }
+
+.lang-hu, .lang-hu > a {
+  background-image: url(../images/flags/hu.png); }
