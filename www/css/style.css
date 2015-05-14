@@ -869,7 +869,8 @@ a:hover {
   position: relative;
   height: 3.5em;
   background-repeat: no-repeat;
-  background-position: 23px center; }
+  background-position: 23px center;
+  z-index: 20; }
 
 .b-header__lang-wrap:hover .ppqtrans_language_chooser {
   display: block; }
